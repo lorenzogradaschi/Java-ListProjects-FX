@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AutoController">
+   <center>
+      <GridPane prefHeight="395.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../ferrari.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="116.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../lamborghini.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="116.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../porsche.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="117.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../maserati.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label alignment="TOP_CENTER" prefHeight="25.0" prefWidth="43.0" text="Ferrari:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+            <Label alignment="TOP_CENTER" layoutX="287.0" layoutY="10.0" prefHeight="25.0" prefWidth="63.0" text="Maserati:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label alignment="TOP_CENTER" layoutX="287.0" layoutY="145.0" prefHeight="25.0" prefWidth="78.0" text="Lamborghini:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label alignment="TOP_CENTER" layoutX="287.0" layoutY="280.0" prefHeight="25.0" prefWidth="56.0" text="Porsche:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+            <Label prefHeight="29.0" prefWidth="143.0" text="Ferrari 296 GTS" GridPane.columnIndex="1" />
+            <Label text="Ferrari Portofino" GridPane.columnIndex="1">
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="105.0" text="Ferrari Roma Spider" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="60.0" />
+               </padding>
+            </Label>
+            <Label text="Maserati Ghibli" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Maserati GranTurismo" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets top="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="98.0" text="Maserati Grecale" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Lamborghini Aventador S" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Lamborghini Urus" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Lamborghini Huracán Spyder" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Porsche 718 Spyder RS" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Porsche 911 Dakar" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="60.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Porsche 718 Cayman GT4 RS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="60.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <Label text="Elenco macchine disponibili" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="btnIndietro" mnemonicParsing="false" onAction="#azioneMostraAuto" prefHeight="25.0" prefWidth="408.0" text="Torna alla pagina di acquisto" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
